@@ -34,7 +34,7 @@ function AboutPage() {
 
           <div className="col-span-12 space-y-6 md:col-span-5 md:pt-8">
             <p className="text-lg leading-relaxed text-foreground/85">
-              Bela-Web is an independent web design practice founded in 2021. We work
+              Bela-Web is an independent web design practice. We work
               with a handful of clients each year — long enough to do the thing properly,
               small enough to stay obsessed with the details.
             </p>
@@ -76,13 +76,8 @@ function AboutPage() {
 
       {/* Stats */}
       <section className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-          {[
-            { k: "47", v: "Sites shipped" },
-            { k: "11", v: "Awards & mentions" },
-            { k: "100%", v: "Hand-coded" },
-            { k: "4yrs", v: "Average client tenure" },
-          ].map((s) => (
+        <div className="grid grid-cols-1 gap-8">
+          {[{ k: "100%", v: "Hand-coded" }].map((s) => (
             <div key={s.v} className="border-t-2 border-ink pt-6">
               <p className="font-display text-6xl text-coral md:text-7xl">{s.k}</p>
               <p className="mt-2 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
