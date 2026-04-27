@@ -1,3 +1,5 @@
+import greycampus from "@/assets/work-greycampus.jpg";
+import odinschool from "@/assets/work-odinschool.jpg";
 import nestharvest from "@/assets/work-nestharvest.jpg";
 import genzmind from "@/assets/work-genzmind.jpg";
 import investadvisors from "@/assets/work-investadvisors.jpg";
@@ -18,6 +20,32 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    slug: "greycampus",
+    name: "GreyCampus",
+    domain: "greycampus.com",
+    category: "EdTech · Professional Certifications",
+    year: "2025",
+    tagline: "A career-defining catalogue, made effortless to browse.",
+    description:
+      "A confident, content-rich digital home for a global professional certifications provider. We restructured dense course information into a clean, conversion-focused experience.",
+    services: ["UX Architecture", "Web Design", "CMS Build"],
+    image: greycampus,
+    palette: ["#1F3A8A", "#F4A261", "#F5F1EA"],
+  },
+  {
+    slug: "odinschool",
+    name: "OdinSchool",
+    domain: "odinschool.com",
+    category: "EdTech · Tech Upskilling",
+    year: "2025",
+    tagline: "Bold, technical, unmistakably for builders.",
+    description:
+      "A dark-mode, high-velocity learning experience for a tech upskilling academy. Designed around outcomes, mentor stories, and a frictionless enrollment flow.",
+    services: ["Brand Direction", "Web Design", "Conversion UX"],
+    image: odinschool,
+    palette: ["#0B1220", "#2D7BF7", "#E8F0FF"],
+  },
   {
     slug: "nestharvest",
     name: "Nest Harvest",
