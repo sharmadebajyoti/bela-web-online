@@ -21,7 +21,7 @@ export const projects: Project[] = [
   {
     slug: "nestharvest",
     name: "Nest Harvest",
-    domain: "nestharvest.in",
+    domain: "nestharvest.shop",
     category: "E-Commerce · Organic Goods",
     year: "2024",
     tagline: "Earthy commerce for a slow-living home brand.",
@@ -34,7 +34,7 @@ export const projects: Project[] = [
   {
     slug: "genzmind",
     name: "GenZ Mind",
-    domain: "genzmind.in",
+    domain: "genzmind.buzz",
     category: "Wellness · Meditation",
     year: "2024",
     tagline: "A breath of fresh air for a generation that needs one.",
@@ -47,7 +47,7 @@ export const projects: Project[] = [
   {
     slug: "investadvisors",
     name: "Invest Advisors",
-    domain: "investadvisors.in",
+    domain: "investadvisors.online",
     category: "Finance · Advisory",
     year: "2023",
     tagline: "Quiet authority for a serious financial firm.",
@@ -60,7 +60,7 @@ export const projects: Project[] = [
   {
     slug: "archvault",
     name: "Arch Vault",
-    domain: "archvault.in",
+    domain: "archvault.shop",
     category: "Architecture · Portfolio",
     year: "2024",
     tagline: "Concrete poetry for a brutalist studio.",
@@ -73,7 +73,7 @@ export const projects: Project[] = [
   {
     slug: "biterush",
     name: "Bite Rush",
-    domain: "biterush.in",
+    domain: "biterush.online",
     category: "F&B · Restaurant",
     year: "2025",
     tagline: "Loud, fast, hungry — like the food.",
