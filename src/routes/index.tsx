@@ -44,7 +44,7 @@ function HomePage() {
         <div className="mx-auto grid max-w-7xl grid-cols-12 gap-6 px-6 pb-20 pt-16 md:px-10 md:pb-32 md:pt-24">
           <div className="col-span-12 md:col-span-7">
             <p className="reveal font-mono text-xs uppercase tracking-[0.3em] text-coral">
-              Bela-Web · Est. 2021 · Independent studio
+              Bela-Web · Independent studio
             </p>
             <h1 className="reveal mt-8 font-display text-[14vw] leading-[0.85] tracking-tight md:text-[8.5rem] lg:text-[10rem]">
               Websites

@@ -108,7 +108,7 @@ function ContactPage() {
               <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
                 Studio
               </p>
-              <p className="mt-1 font-display text-2xl">Bengaluru ↔ Worldwide</p>
+              <p className="mt-1 font-display text-2xl">Hyderabad ↔ Worldwide</p>
             </div>
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">

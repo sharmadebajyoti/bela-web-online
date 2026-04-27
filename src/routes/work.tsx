@@ -23,7 +23,7 @@ function WorkPage() {
     <>
       <section className="mx-auto max-w-7xl px-6 pb-12 pt-20 md:px-10 md:pb-20 md:pt-32">
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-coral">
-          The Archive · 2021 — 2025
+          The Archive
         </p>
         <h1 className="mt-6 font-display text-[14vw] leading-[0.9] md:text-[9rem]">
           Selected
