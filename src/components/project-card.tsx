@@ -18,8 +18,6 @@ export function ProjectCard({ project, index }: Props) {
       >
         <div className="flex items-baseline gap-4 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
           <span className="text-coral">{String(index + 1).padStart(2, "0")}</span>
-          <span>{project.year}</span>
-          <span>·</span>
           <span>{project.category}</span>
         </div>
 
