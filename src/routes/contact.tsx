@@ -65,13 +65,42 @@ function ContactPage() {
 
   const onSubmit = async (data: ContactValues) => {
     setSubmitting(true);
-    // Simulated send — wire to a server function or email API later
-    await new Promise((r) => setTimeout(r, 900));
-    setSubmitting(false);
-    toast.success("Message received", {
-      description: `Thanks, ${data.name}. We'll be in touch within 48 hours.`,
-    });
-    reset();
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "2e88cd07-51a5-4378-9529-873722775ff1",
+          subject: `New project inquiry from ${data.name}`,
+          from_name: data.name,
+          replyto: data.email,
+          name: data.name,
+          email: data.email,
+          company: data.company || "—",
+          budget: data.budget,
+          service: data.service,
+          message: data.message,
+        }),
+      });
+      const result = await res.json();
+      if (!res.ok || !result.success) {
+        throw new Error(result.message || "Failed to send");
+      }
+      toast.success("Message received", {
+        description: `Thanks, ${data.name}. We'll be in touch within 48 hours.`,
+      });
+      reset();
+    } catch (err) {
+      toast.error("Couldn't send your message", {
+        description:
+          err instanceof Error ? err.message : "Please try again or email hello@bela-web.com",
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
